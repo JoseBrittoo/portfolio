@@ -28,3 +28,39 @@ header > .interface{
     align-items: center;
     justify-content: space-between;
 }
+/* Mudar cor da lertra e tirar sublinhado. Converte o link de inline-level para block-level ou inline-block*/
+header a{ 
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+/* quando passar o mouse emcima dar um pequeno zoo e mudar a cor */
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* tira os pontos da lista */
+header nav ul{
+    list-style-type: none;
+}
+/* adiciona um ao lado do outro e arruma o espaçamento */
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+/* Estiliza o botão */
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* aplica o efeito ao botão */
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+}
