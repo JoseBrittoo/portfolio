@@ -18,6 +18,22 @@ body{
     margin: 0 auto; /*centralizar*/
 }
 
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #8257e6;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
 /* Estilo do cabeçalho */
 header{
     padding: 40px 4%;
@@ -30,14 +46,14 @@ header > .interface{
 }
 /* Mudar cor da lertra e tirar sublinhado. Converte o link de inline-level para block-level ou inline-block*/
 header a{ 
-    color: #5c5c5c;
+    color: #4a425e;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 /* quando passar o mouse emcima dar um pequeno zoo e mudar a cor */
 header a:hover{
-    color: #fff;
+    color: #8257E6;
     transform: scale(1.05);
 }
 
@@ -50,17 +66,52 @@ header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
-/* Estiliza o botão */
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00ff08;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
+
 /* aplica o efeito ao botão */
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #00ff08;
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #8257E6;
+    transform: scale(1.05);
+}
+
+
+/* Estilo do topo do site */
+section.topo-site{
+    padding: 40px 4%;
+}
+
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-site .txt-topo-site h1 span{
+    color: #8257e6;
+}
+
+.topo-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+/* chama a classe img para aplicar a animação */
+.topo-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate; /* tempo, velocidode, continua e caminha de ida e volta*/
+}
+
+/* Animação img */
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
 }
