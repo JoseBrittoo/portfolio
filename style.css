@@ -115,3 +115,37 @@ section.topo-site .flex{
         top: 30px;
     }
 }
+
+/* Estilo do sobre */
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h1{
+    font-size: 20px;
+    line-height: 60px;
+}
+.sobre .txt-sobre h2{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #8257E6;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
