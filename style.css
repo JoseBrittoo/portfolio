@@ -34,6 +34,12 @@ body{
     transition: .2s;
 }
 
+/* aplica o efeito ao botão */
+button:hover{
+    box-shadow: 0px 0px 8px #8257E6;
+    transform: scale(1.05);
+}
+
 /* Estilo do cabeçalho */
 header{
     padding: 40px 4%;
@@ -67,12 +73,19 @@ header nav ul li{
     padding: 0 40px;
 }
 
-/* aplica o efeito ao botão */
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #8257E6;
-    transform: scale(1.05);
+/* Botão de redes sociais */
+.topo-site .txt-topo-site .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: #8257e6;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 15px 5px; /* altura e distancia*/
+    transition: .2s;
 }
-
 
 /* Estilo do topo do site */
 section.topo-site{
