@@ -1,5 +1,5 @@
 
-/* Estilo geral */
+/* Estilo GERAL */
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +20,7 @@ body{
 
 .flex{
     display: flex;
+  
 }
 
 .btn-contato button{
@@ -49,9 +50,13 @@ h2.titulo span{
     color: #8257E6;
 }
 
-/* Estilo do cabeçalho */
+/* Estilo do MENU */
 header{
+    width: 100%;
     padding: 40px 4%;
+    position: fixed; /*fixa a barra de menu na tela*/
+    transition: .5s;
+    z-index: 2; /*deixar o menu sobreposto a tudo*/
 }
 
 header > .interface{
@@ -59,6 +64,7 @@ header > .interface{
     align-items: center;
     justify-content: space-between;
 }
+
 /* Mudar cor da lertra e tirar sublinhado. Converte o link de inline-level para block-level ou inline-block*/
 header a{ 
     color: #4a425e;
@@ -66,6 +72,7 @@ header a{
     display: inline-block;
     transition: .2s;
 }
+
 /* quando passar o mouse emcima dar um pequeno zoo e mudar a cor */
 header a:hover{
     color: #8257E6;
@@ -76,10 +83,21 @@ header a:hover{
 header nav ul{
     list-style-type: none;
 }
+
 /* adiciona um ao lado do outro e arruma o espaçamento */
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
+}
+
+/* adiciona o efeito no menu */
+header.rolagem{
+    background-color: #292828;
+    padding: 20px 0;
+}
+
+header.rolagem a{
+    color: #8257E6;
 }
 
 /* Botão de redes sociais */
@@ -96,15 +114,16 @@ header nav ul li{
     transition: .2s;
 }
 
-/* Estilo do topo do site */
+/* Estilo do TOPO DO SITE */
 section.topo-site{
-    padding: 40px 4%;
+    padding: 20px 4%; 
 }
 
 section.topo-site .flex{
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 100px;
+    height: 90vh;
 }
 
 .topo-site h1{
@@ -138,9 +157,9 @@ section.topo-site .flex{
     }
 }
 
-/* Estilo do sobre */
+/* Estilo SOBRE */
 section.sobre{
-    padding: 40px 4%;
+    padding: 80px 4%;
 }
 
 section.sobre .flex{
@@ -172,7 +191,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-/* Estilo das habilidades */
+/* Estilo das HABILIDADES */
 section.habilidades{
     padding: 80px 4%;
 }
@@ -230,7 +249,7 @@ section.habilidades{
     box-shadow: 0px 0px 8px #8257E6;
 }
 
-/* Estilo dos projetos */
+/* Estilo dos PROJETOS */
 section.projetos{
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #1a1a1a;
@@ -246,7 +265,7 @@ section.projetos .flex{
     background-color: #8257E6;
 }
 
-/* Estilo do Fomulario */
+/* Estilo do FOMS */
 section.fomulario{
     padding: 80px 4%;
 }
@@ -273,7 +292,7 @@ form input, form textarea{
 }
 
 form textarea {
-    resize: none; /* para não redimensionar */
+    resize: vertical; /* para não redimensionar */
     max-height: 200px;
 }
  
@@ -292,7 +311,7 @@ form .btn-enviar input{
     border-radius: 20px;
 }
 
-/* Estilo rodapé */
+/* Estilo RODAPÉ */
 footer{
     padding: 30px 4%;
     box-shadow: 0 0 40px 10px #1a1a1a;
@@ -312,7 +331,7 @@ footer p{
 }
 
 
-/* Estilo scrollbar */
+/* Estilo SCRALLBAR */
 ::-webkit-scrollbar{ /*trilho*/
     width: 10px;
     background-color: #1a1a1a;
