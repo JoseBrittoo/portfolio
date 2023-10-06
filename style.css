@@ -175,6 +175,7 @@ section.sobre .flex{
     font-size: 20px;
     line-height: 60px;
 }
+
 .sobre .txt-sobre h2{
     font-size: 50px;
     line-height: 50px;
@@ -344,26 +345,73 @@ footer p{
 
 /* Responsividade */
 @media screen and (max-width: 1020px){
+    
     /*classes gerias*/
     .flex{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /*determina a direção dos elementos*/
     }
 
-    /*cabeçalho*/
+    /*menu*/
     .menu-desktop, .btn-contato{
         display: none;
     }
     
     /*topo site*/
+    section.topo-site .flex{
+        gap: 40px;
+    }
+
     section.topo-site{
         padding: 20px 8%;
     }
 
     .topo-site h1{
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .topo-site .img-topo-site img{
         width: 100%;
     }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    /*sobre*/
+    section.sobre{
+        padding: 80px 8%;
+    }
+    
+    .sobre .txt-sobre h1{
+        font-size: 20px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 45px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+
+    /*projetos*/
+    section.projetos{
+        padding: 70px 8%;
+    }
+
+    .img-projetos{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex{
+        gap: 60px;
+    }
+
 }
