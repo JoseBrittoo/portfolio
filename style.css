@@ -326,13 +326,44 @@ section.projetos{
 }
 
 section.projetos .flex{
-    justify-content: space-around;
+   justify-content: space-around;
 }
 
 .img-projetos{
     width: 360px;
     height: 460px;
-    background-color: #8257E6;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 10s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-projetos:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008b;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
 }
 
 /* Estilo do FOMS */
