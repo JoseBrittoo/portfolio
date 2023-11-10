@@ -397,12 +397,12 @@ form textarea {
     max-height: 200px;
 }
  
-form .btn-enviar{
+form button{
     margin-top: 20px;
     text-align: center;
 }
 
-form .btn-enviar input{
+form button{
     width: 120px;
     background-color: #8257E6;
     color: #fff;
