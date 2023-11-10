@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="style.css">
-    <script src="menu_mob.js" defer></script>
+   
     
     <title>Portifólio | José Brito</title>
 </head>
@@ -76,7 +76,7 @@
 
                         <p>Estou em busca de mudar o meu mundo e das pessoas que amo.</p>
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="https://drive.google.com/file/d/1vDBgOi7ratOSYhlHW-523etjrHf8lMW1/view?usp=sharing" target="_blank">
                                 <button>Dowload CV</button>
                             </a>
                         </div>
@@ -107,7 +107,7 @@
                     <div class="txt-sobre">
                         <h1>Um pouco sobre mim</h1>
                         <h2>Muito Prazer, <span>sou José Brito.</span></h2>
-                        <p>Sou graduando em Licenciatura em Computação pela Universidade do Estado do Amazonas, ainda estou me encontrando nesse vasto mundo do desenvolvimento, mas estou no caminho para me tornar um desenvolvedor Full Stack.</p>
+                        <p>Sou graduando em Licenciatura em Computação pela Universidade do Estado do Amazonas, ainda estou me encontrando nesse vasto mundo do desenvolvimento, mas estou no caminho para me tornar um desenvolvedor Front-End.</p>
                         <p>Tenho um grande atrativo pela área de engenharia de software, design e ciência de dados. Atualmante faço estágio onde desenvolvo soluções utilizando Postgresql, Python, Power Bi, Linux e Dbeaver.</p>   
                     </div><!--txt-sobre-->
                 </div><!--flex-->
@@ -135,10 +135,10 @@
                             <p>DJANGO</p>
                             <img src="assets/django.svg" alt="django">
                         </div>
-                        <div class="box" key"4">
+                        <!-- <div class="box" key"4">
                             <p>FLASK</p>
                             <img src="assets/flask.svg" alt="flask">
-                        </div>
+                        </div>  -->
                         <div class="box" key"5">
                             <p>POSTGRESQL</p>
                             <img src="assets/postgresql.svg" alt="postgresql">
@@ -189,14 +189,18 @@
             <div class="interface">
                 <h2 class="titulo">Entre em <span>Contato.</span></h2>
                 
-                <form action="">
-                    <input type="text" placeholder="Digite seu nome completo:" required>
+                <form action="https://formsubmit.co/brito7.jose@gmail.com" method="post">
+
+                    <input type="text" placeholder="Digite seu nome:" required>
                     <input type="text" placeholder="Digite seu nome e-mail:" required>
                     <input type="text" placeholder="Digite o assunto:" required>
                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar">
                         <input type="submit" value="Enviar">
                     </div>
+                    <input type="hidden" name="_subject" value="Novo Contato!">
+                    <input type="text" name="_honey" style="display:none;">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div><!--interface-->
         </section><!--fomulario-->
@@ -229,7 +233,8 @@
         </div><!--interface-->
     </footer>
 
-    <script src="menu.js" defer></script>
+<script src="menu.js" defer></script>
+<script src="menu_mob.js" defer></script>
     
 
 </body>
