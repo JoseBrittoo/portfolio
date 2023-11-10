@@ -403,13 +403,16 @@ form button{
 }
 
 form button{
-    width: 120px;
+    padding: 10px 40px;
+    margin: 0 auto;
+    font-size: 18px;
     background-color: #8257E6;
     color: #fff;
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
-    border-radius: 20px;
+    border-radius: 30px;
+    border: 0;
 }
 
 /* Estilo RODAPÉ */
