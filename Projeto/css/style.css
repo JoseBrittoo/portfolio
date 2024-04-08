@@ -32,7 +32,7 @@ body{
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
+    z-index: 99999999; 
   }
 
 .btn-contato button{
@@ -69,6 +69,7 @@ header{
     position: fixed; /*fixa a barra de menu na tela*/
     transition: .5s;
     z-index: 2; /*deixar o menu sobreposto a tudo*/
+    box-shadow: 0 0 40px 10px #8257e624;
 }
 
 header > .interface{
@@ -197,7 +198,7 @@ header.rolagem a{
 
 /* Estilo do TOPO DO SITE */
 section.topo-site{
-    padding: 20px 4%; 
+    padding: 20px 4%;
 }
 
 section.topo-site .flex{
@@ -241,6 +242,7 @@ section.topo-site .flex{
 /* Estilo SOBRE */
 section.sobre{
     padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #8257e624;
 }
 
 section.sobre .flex{
@@ -334,7 +336,7 @@ section.habilidades{
 /* Estilo dos PROJETOS */
 section.projetos{
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #1a1a1a;
+    box-shadow: 0 0 40px 10px #8257e624;
 }
 
 section.projetos .flex{
@@ -378,59 +380,9 @@ section.projetos .flex{
     opacity: 1;
 }
 
-/* Estilo do FOMS */
-section.fomulario{
-    padding: 80px 4%;
-}
-
-form{
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-form input, form textarea{
-    width: 100%;
-    background-color: #2e2e2e;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 18px;
-}
-
-form textarea {
-    resize: vertical; /* para não redimensionar */
-    max-height: 200px;
-}
- 
-form button{
-    margin-top: 20px;
-    text-align: center;
-}
-
-form button{
-    padding: 10px 40px;
-    margin: 0 auto;
-    font-size: 18px;
-    background-color: #8257E6;
-    color: #fff;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
-    border-radius: 30px;
-    border: 0;
-}
-
 /* Estilo RODAPÉ */
 footer{
     padding: 30px 4%;
-    box-shadow: 0 0 40px 10px #1a1a1a;
 }
 
 footer .flex{
@@ -464,6 +416,10 @@ footer p{
     /*classes gerias*/
     .flex{
         flex-direction: column-reverse; /*determina a direção dos elementos*/
+    }
+    
+    header{
+        padding: 20px 4%;
     }
 
     .btn-abrir-menu{
