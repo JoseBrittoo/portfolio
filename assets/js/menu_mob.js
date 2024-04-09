@@ -45,6 +45,12 @@ window.addEventListener("mousemove", function(e){
 });
 
 function animateCircles() {
+
+  // Verifica a largura da tela
+  if (window.innerWidth < 500) {
+    // Se a largura da tela for menor que 500px, interrompe a animação
+    return;
+  }
   
   let x = coords.x;
   let y = coords.y;
