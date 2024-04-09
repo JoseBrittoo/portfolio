@@ -1,8 +1,8 @@
-# 🧑🏻‍💻[Portfólio - José Brito](https://josebrittoo.github.io/portfolio/)
+# 🧑🏻‍💻[Portfólio - José Brito](https://josebrito.netlify.app/)
 
 ![josebrittoo github io](https://github.com/JoseBrittoo/portfolio/assets/95869529/e3c397f6-b5db-4609-8900-8d2c80fe6ebd)
 
-[Clique aqui para visitar o projeto](https://josebrittoo.github.io/portfolio/)
+[Clique aqui para visitar o projeto](https://josebrito.netlify.app/)
 
 ## 🛠️Ferramentas utilizadas
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
