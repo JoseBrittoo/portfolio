@@ -18,6 +18,20 @@ body{
     margin: 0 auto; /*centralizar*/
 }
 
+/* Estilo para o vídeo de fundo */
+.video-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.28;
+}
+
 .flex{
     display: flex;
   
@@ -69,7 +83,6 @@ header{
     position: fixed; /*fixa a barra de menu na tela*/
     transition: .5s;
     z-index: 2; /*deixar o menu sobreposto a tudo*/
-    box-shadow: 0 0 40px 10px #8257e624;
 }
 
 header > .interface{
@@ -242,7 +255,6 @@ section.topo-site .flex{
 /* Estilo SOBRE */
 section.sobre{
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #8257e624;
 }
 
 section.sobre .flex{
