@@ -313,7 +313,8 @@ section.habilidades{
 }
 
 .habilidades .habilidades-box .box img{
-    width: 3rem
+    width: 3rem;
+    height: 3rem;
 }
 
 .habilidades .habilidades-box .box::after{
