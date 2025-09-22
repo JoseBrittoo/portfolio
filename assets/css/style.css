@@ -1,6 +1,5 @@
-
 /* Estilo GERAL */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,19 +7,21 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-body{
+body {
     background-color: #000;
     height: 100vh;
 }
 
-.interface{ 
-    max-width: 1280px; /*largura*/
-    margin: 0 auto; /*centralizar*/
+.interface {
+    max-width: 1280px;
+    /*largura*/
+    margin: 0 auto;
+    /*centralizar*/
 }
 
-.flex{
+.flex {
     display: flex;
-  
+
 }
 
 .circle {
@@ -28,14 +29,14 @@ body{
     width: 24px;
     border-radius: 24px;
     background-color: black;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 99999999; 
-  }
+    z-index: 99999999;
+}
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -47,39 +48,43 @@ body{
     transition: .2s;
 }
 
-button:hover, form .btn-enviar input:hover{
+button:hover,
+form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #8257E6;
     transform: scale(1.05);
 }
 
-h2.titulo{
+h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
     margin-bottom: 40px;
 }
-h2.titulo span{
+
+h2.titulo span {
     color: #8257E6;
 }
 
 /* Estilo do MENU */
-header{
+header {
     width: 100%;
     padding: 40px 4%;
-    position: fixed; /*fixa a barra de menu na tela*/
+    position: fixed;
+    /*fixa a barra de menu na tela*/
     transition: .5s;
-    z-index: 2; /*deixar o menu sobreposto a tudo*/
+    z-index: 2;
+    /*deixar o menu sobreposto a tudo*/
     box-shadow: 0 0 40px 10px #8257e624;
 }
 
-header > .interface{
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 /* Mudar cor da lertra e tirar sublinhado. Converte o link de inline-level para block-level ou inline-block*/
-header a{ 
+header a {
     color: #4a425e;
     text-decoration: none;
     display: inline-block;
@@ -87,34 +92,34 @@ header a{
 }
 
 /* quando passar o mouse emcima dar um pequeno zoo e mudar a cor */
-header nav.menu-desktop a:hover{
+header nav.menu-desktop a:hover {
     color: #8257E6;
     transform: scale(1.05);
 }
 
 /* tira os pontos da lista */
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
 
 /* adiciona um ao lado do outro e arruma o espaçamento */
-header nav.menu-desktop ul li{
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
 /* adiciona o efeito no menu */
-header.rolagem{
+header.rolagem {
     background-color: #292828;
     padding: 20px 0;
 }
 
-header.rolagem a{
+header.rolagem a {
     color: #8257E6;
 }
 
 /* Botão de redes sociais */
-.btn-social button{
+.btn-social button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -123,21 +128,22 @@ header.rolagem a{
     background-color: #8257E6;
     font-size: 20px;
     cursor: pointer;
-    margin: 10px 5px; /* altura e distancia*/
+    margin: 10px 5px;
+    /* altura e distancia*/
     transition: .2s;
 }
 
 /* Estilo MENU MOBILE */
-.btn-abrir-menu{
+.btn-abrir-menu {
     display: none;
 }
 
-.btn-abrir-menu i{
+.btn-abrir-menu i {
     color: #8257E6;
     font-size: 40px;
 }
 
-.menu-mobile{
+.menu-mobile {
     background-color: #000000;
     height: 100vh;
     position: fixed;
@@ -149,42 +155,42 @@ header.rolagem a{
     transition: .2s;
 }
 
-/* adiciona a classe js para abrir */ 
-.menu-mobile.abrir-menu{
+/* adiciona a classe js para abrir */
+.menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
-.menu-mobile .btn-fechar{
+.menu-mobile .btn-fechar {
     padding: 20px 5%;
 }
 
-.menu-mobile .btn-fechar i{
+.menu-mobile .btn-fechar i {
     color: #8257E6;
     font-size: 30px;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
 }
 
-.menu-mobile nav ul li a{
+.menu-mobile nav ul li a {
     color: #fff;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 7%;
-    display: block; 
+    display: block;
 }
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
     background-color: #8257E6;
     color: #000;
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: #000000b4;
     width: 100%;
     height: 100%;
@@ -196,90 +202,92 @@ header.rolagem a{
 }
 
 /* Estilo do TOPO DO SITE */
-section.topo-site{
+section.topo-site {
     padding: 20px 4%;
 }
 
-section.topo-site .flex{
+section.topo-site .flex {
     align-items: center;
     justify-content: center;
     gap: 100px;
     height: 90vh;
 }
 
-.topo-site h1{
+.topo-site h1 {
     color: #fff;
     font-size: 42px;
     line-height: 40px;
 }
 
-.topo-site .txt-topo-site h1 span{
+.topo-site .txt-topo-site h1 span {
     color: #8257E6;
 }
 
-.topo-site .txt-topo-site p{
+.topo-site .txt-topo-site p {
     color: #fff;
     margin: 40px 0;
 }
 
 /* chama a classe img para aplicar a animação */
-.topo-site .img-topo-site img{
+.topo-site .img-topo-site img {
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate; /* tempo, velocidode, continua e caminha de ida e volta*/
+    animation: flutuar 2s ease-in-out infinite alternate;
+    /* tempo, velocidode, continua e caminha de ida e volta*/
 }
 
 /* Animação img */
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /* Estilo SOBRE */
-section.sobre{
+section.sobre {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #8257e624;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
     color: #fff;
 }
 
-.sobre .txt-sobre h1{
+.sobre .txt-sobre h1 {
     font-size: 20px;
     line-height: 60px;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 50px;
     line-height: 50px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     color: #8257E6;
     display: block;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
 }
 
 /* Estilo das HABILIDADES */
-section.habilidades{
+section.habilidades {
     padding: 80px 4%;
 }
 
-.habilidades .habilidades-box{
+.habilidades .habilidades-box {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -287,11 +295,12 @@ section.habilidades{
     gap: 5rem;
 }
 
-.habilidades .habilidades-box .box{
+.habilidades .habilidades-box .box {
     position: relative;
     text-align: center;
     background-color: #212121;
-    width: 8rem; /*largura*/
+    width: 8rem;
+    /*largura*/
     aspect-ratio: 1;
     padding: 0;
     display: flex;
@@ -304,7 +313,7 @@ section.habilidades{
     transition: .2s;
 }
 
-.habilidades .habilidades-box .box p{
+.habilidades .habilidades-box .box p {
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
     font-weight: 250;
@@ -312,53 +321,76 @@ section.habilidades{
     margin-bottom: 1.5rem
 }
 
-.habilidades .habilidades-box .box img{
+.habilidades .habilidades-box .box img {
     width: 3rem;
     height: 3rem;
 }
 
-.habilidades .habilidades-box .box::after{
+.habilidades .habilidades-box .box::after {
     content: "";
     display: block;
     position: absolute;
-    width: 100%; 
+    width: 100%;
     height: 0.3rem;
     background-image: linear-gradient(90deg, #8257E6 0%, #5a0a7c 92.32%);
     bottom: -0.1rem;
     left: 0
 }
 
-.habilidades .habilidades-box .box:hover{
+.habilidades .habilidades-box .box:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 8px #8257E6;
 }
 
 /* Estilo dos PROJETOS */
-section.projetos{
+section.projetos {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #8257e624;
 }
 
-section.projetos .flex{
-   justify-content: space-around;
+section.projetos .flex {
+    /* justify-content: space-around; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.img-projetos{
-    width: 360px;
+.img-projetos {
+    width: 400px;
     height: 460px;
     background-size: cover;
-    background-position: 100% 0%;
-    transition: 10s;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 8s;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
 }
 
-.img-projetos:hover{
+.img-projetos:hover {
     background-position: 100% 100%;
 }
 
-.overlay{
+.img-projetos.paisagem {
+    background-position: center;
+}
+
+.img-projetos.paisagem:hover {
+    animation: slideX 6s infinite alternate linear;
+}
+
+@keyframes slideX {
+    from {
+        background-position: left center;
+    }
+
+    to {
+        background-position: right center;
+    }
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -376,124 +408,185 @@ section.projetos .flex{
     transition: 1.5s;
 }
 
-.overlay:hover{
+.overlay:hover {
     opacity: 1;
 }
 
-/* Estilo RODAPÉ */
-footer{
-    padding: 30px 4%;
+/* Estilo das PESQUISAS */
+section.pesquisa {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #8257e624;
 }
 
-footer .flex{
+section.pesquisa .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
 }
 
-footer .line-footer{
+.card-pesquisa {
+    background: #212121;
+    border-radius: 20px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-pesquisa:hover {
+    transform: translateY(-5px);
+}
+
+.card-pesquisa h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #8257e6;
+}
+
+.card-pesquisa p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.card-pesquisa a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #8257e6;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.card-pesquisa a:hover {
+    background: #5f3db3;
+}
+
+
+/* Estilo RODAPÉ */
+footer {
+    padding: 30px 4%;
+}
+
+footer .flex {
+    justify-content: center;
+}
+
+footer .line-footer {
     padding: 20px 0;
 }
 
-footer p{
+footer p {
     color: #f7f7f7;
     text-align: center;
 }
 
 
 /* Estilo SCRALLBAR */
-::-webkit-scrollbar{ /*trilho*/
+::-webkit-scrollbar {
+    /*trilho*/
     width: 10px;
     background-color: #1a1a1a;
 }
 
-::-webkit-scrollbar-thumb{ /*cor da barra de rolagem*/
+::-webkit-scrollbar-thumb {
+    /*cor da barra de rolagem*/
     width: 10px;
     background-color: #8257E6;
 }
 
 /* Responsividade */
-@media screen and (max-width: 1020px){
-    
+@media screen and (max-width: 1020px) {
+
     /*classes gerias*/
-    .flex{
-        flex-direction: column-reverse; /*determina a direção dos elementos*/
+    .flex {
+        flex-direction: column-reverse;
+        /*determina a direção dos elementos*/
     }
-    
-    header{
+
+    header {
         padding: 20px 4%;
     }
 
-    .btn-abrir-menu{
+    .btn-abrir-menu {
         display: block;
     }
 
     /*menu*/
-    .menu-desktop, 
-    .btn-contato{
+    .menu-desktop,
+    .btn-contato {
         display: none;
     }
 
-   
+
     /*topo site*/
-    section.topo-site .flex{
+    section.topo-site .flex {
         gap: 40px;
     }
 
-    section.topo-site{
+    section.topo-site {
         padding: 20px 8%;
     }
 
-    .topo-site h1{
+    .topo-site h1 {
         font-size: 28px;
         text-align: center;
     }
 
-    .topo-site p{
+    .topo-site p {
         text-align: center;
     }
 
-    .topo-site .img-topo-site img{
+    .topo-site .img-topo-site img {
         width: 100%;
     }
 
-    .btn-social{
+    .btn-social {
         text-align: center;
     }
 
     /*sobre*/
-    section.sobre{
+    section.sobre {
         padding: 80px 8%;
     }
-    
-    .sobre .txt-sobre h1{
+
+    .sobre .txt-sobre h1 {
         font-size: 20px;
         line-height: 60px;
         text-align: center;
     }
 
-    .sobre .txt-sobre h2{
+    .sobre .txt-sobre h2 {
         font-size: 45px;
         line-height: 40px;
         text-align: center;
     }
 
-    .img-sobre img{
+    .img-sobre img {
         width: 100%;
     }
 
 
     /*projetos*/
-    section.projetos{
+    section.projetos {
         padding: 70px 8%;
     }
 
-    .img-projetos{
+    .img-projetos {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
     }
 
-    section.projetos .flex{
+    section.projetos .flex {
         gap: 60px;
     }
 
+    section.pesquisa .flex {
+        flex-direction: column;
+        align-items: center;
+    }
 }

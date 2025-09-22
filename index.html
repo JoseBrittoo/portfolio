@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
     <!-- Fim google fonts -->
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="/assets/css/style.css">
-   
-    
+
+
     <title>Portifólio | José Brito</title>
     <link type="image/png" rel="icon" href="/assets/images/favicon.png">
 </head>
+
 <body>
 
     <header id="header">
@@ -26,13 +29,14 @@
                     <img src="/assets/images/logo.png" alt="Logo Brito">
                 </a>
             </div><!--logo-->
-            
+
             <nav class="menu-desktop"><!--Menu para tornar responsivo-->
                 <ul>
                     <li><a href="">Início</a></li>
                     <li><a href="#sobre">Sobre mim</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#line-footer">Projetos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#line-footer">Pesquisas</a></li>
                 </ul>
             </nav>
 
@@ -51,22 +55,23 @@
                 <div class="btn-fechar">
                     <i class="bi bi-x-lg"></i>
                 </div><!--btn-fechar-->
-                
+
                 <nav>
                     <ul>
                         <li><a href="#">Início</a></li>
                         <li><a href="#sobre">Sobre mim</a></li>
                         <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#pesquisa">Pesquisas</a></li>
                         <li><a href="#line-footer">Contato</a></li>
                     </ul>
                 </nav>
 
-            </div><!--menu-mobile--> 
+            </div><!--menu-mobile-->
             <div class="overlay-menu" id="overlay-menu"></div>
         </div><!--interface-->
     </header>
-    
+
     <main>
         <section class="topo-site">
             <div class="interface">
@@ -76,7 +81,8 @@
 
                         <p>Estou em busca de mudar o meu mundo e das pessoas que amo.</p>
                         <div class="btn-contato">
-                            <a href="https://drive.google.com/file/d/1zF48uPTfJT029y1qjOokGPi4SvvO_Vuf/view?usp=sharing" target="_blank">
+                            <a href="https://drive.google.com/file/d/1zF48uPTfJT029y1qjOokGPi4SvvO_Vuf/view?usp=sharing"
+                                target="_blank">
                                 <button>Dowload CV</button>
                             </a>
                         </div>
@@ -102,7 +108,7 @@
                 </div> <!--flex-->
             </div><!--interface-->
         </section> <!--topo-site-->
-        
+
         <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
@@ -112,8 +118,12 @@
                     <div class="txt-sobre">
                         <h1>Um pouco sobre mim</h1>
                         <h2>Muito Prazer, <span>sou José Brito.</span></h2>
-                        <p>Sou graduando em Licenciatura em Computação pela Universidade do Estado do Amazonas, ainda estou me encontrando nesse vasto mundo do desenvolvimento, mas estou no caminho para me tornar um desenvolvedor Front-End.</p>
-                        <p>Tenho um grande atrativo pela área de engenharia de software, design e ciência de dados. Atualmante faço estágio onde desenvolvo soluções utilizando Postgresql, Python, Power Bi, Linux e Dbeaver.</p>   
+                        <p>Sou finalista em Licenciatura em Computação pela Universidade do Estado do Amazonas, ainda
+                            estou me encontrando nesse vasto mundo do desenvolvimento, mas estou no caminho para me
+                            tornar um desenvolvedor Front-End e já sou pesquisador científico.</p>
+                        <p>Tenho um grande atrativo pela área de engenharia de software, design e desenvolvimento web.
+                            Atualmante estou em um P&D atuando como dev frontend jr, onde utilizamos metodologia Scrum,
+                            React e Tailwind.</p>
                     </div><!--txt-sobre-->
                 </div><!--flex-->
             </div> <!--interface-->
@@ -157,14 +167,10 @@
                             <img src="/assets/images/javascript.svg" alt="javascript">
                         </div>
                         <div class="box" key"9">
-                            <p>JAVA</p>
-                            <img src="/assets/images/java.svg" alt="java">
-                        </div>
-                        <div class="box" key"10">
                             <p>FIGMA</p>
                             <img src="/assets/images/figma.svg" alt="figma">
                         </div>
-                        <div class="box" key"11">
+                        <div class="box" key"10">
                             <p>REACT</p>
                             <img src="/assets/images/react-.svg" alt="react">
                         </div>
@@ -178,34 +184,79 @@
                 <h2 class="titulo">Meus <span>Projetos.</span></h2>
                 <div class="flex">
                     <a href="https://josebrittoo.github.io/cafe_loja/" target="_blank" rel="noopener noreferrer">
-                        <div class="img-projetos" style="background-image: url(/assets/images/josebrittoo.github.io_cafe_loja.png);">
+                        <div class="img-projetos"
+                            style="background-image: url(/assets/images/josebrittoo.github.io_cafe_loja.png);">
                             <div class="overlay">Projeto 1</div>
                         </div>
                     </a>
-                        <div class="img-projetos" style="background-image: url(/assets/images/josebrittoo.github.io_portfolio_.png);">
-                            <div class="overlay">Projeto 2</div>
-                        </div>
+                    <div class="img-projetos"
+                        style="background-image: url(/assets/images/josebrittoo.github.io_portfolio_.png);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
                     <a href="https://josebrittoo.github.io/Coven/" target="_blank" rel="noopener noreferrer">
                         <div class="img-projetos" style="background-image: url(/assets/images/lol.png);">
                             <div class="overlay">Projeto 3</div>
                         </div>
-                    </a>
+
+                        <a href="https://github.com/JoseBrittoo/planejadorviagem" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="img-projetos paisagem"
+                                style="background-image: url(/assets/images/planejar-viagem.png);">
+                                <div class="overlay">Projeto 4</div>
+                            </div>
+                            <a href="https://github.com/JoseBrittoo/atividadesAcademicas" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="img-projetos paisagem"
+                                    style="background-image: url(/assets/images/gestão-atividade.png);">
+                                    <div class="overlay">Projeto 5</div>
+                                </div>
+                            </a>
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--projetos-->
+
+        <section class="pesquisa" id="pesquisa">
+            <div class="interface">
+                <h2 class="title">Minhas <span>Pesquisas.</span></h2>
+                <div class="flex">
+                    <div class="card-pesquisa">
+                        <h3>Estudo 1</h3>
+                        <p>BitLand: um jogo para auxiliar na aprendizagem de medidas de grandezas na informática</p>
+                        <a href="https://doi.org/10.5753/educomp_estendido.2024.238809" target="_blank"
+                            rel="noopener noreferrer">Acessar Paper</a>
+                    </div>
+
+                    <div class="card-pesquisa">
+                        <h3>Estudo 2</h3>
+                        <p>Desvendando conhecimentos sociais em equipes de desenvolvimento de software a partir de logs
+                            de comunicação</p>
+                        <a href="https://doi.org/10.5753/sbsc.2025.8185" target="_blank"
+                            rel="noopener noreferrer">Acessar Paper</a>
+                    </div>
+
+                    <div class="card-pesquisa">
+                        <h3>Estudo 3</h3>
+                        <p>IA na Educação Básica: um estudo descritivo-exploratório com Google Teachable Machine e MIT
+                            RAISE Playground</p>
+                        <a href="" target="_blank" rel="noopener noreferrer">Em processo de publicação</a>
+                    </div>
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--pesquisa-->
     </main>
 
     <footer>
         <div class="interface">
             <div class="line-footer" id="line-footer">
                 <div class="flex">
-                    <div class="btn-social"> 
+                    <div class="btn-social">
                         <a href="https://www.linkedin.com/in/britojos/" target="_blank">
                             <button>
                                 <i class="bi bi-linkedin"></i>
                             </button>
                         </a>
-                        <a href="https://github.com/JoseBrittoo" target="_blank" >
+                        <a href="https://github.com/JoseBrittoo" target="_blank">
                             <button>
                                 <i class="bi bi-github"></i>
                             </button>
@@ -222,7 +273,7 @@
             <p>© 2023 | José Brito</p>
         </div><!--interface-->
     </footer>
-    
+
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
@@ -243,9 +294,10 @@
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
-    
-<script src="/assets/js/menu.js" defer></script>
-<script src="/assets/js/menu_mob.js" defer></script>
+
+    <script src="/assets/js/menu.js" defer></script>
+    <script src="/assets/js/menu_mob.js" defer></script>
 
 </body>
+
 </html>
